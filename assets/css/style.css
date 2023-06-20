@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+body{
+    background-color: #CCCCCC;
+}
+h3{
+    margin-left: 15px;
+}
+
+.bodyBox{
+    width: 90%;
+    padding-top: 1rem;
+    margin: auto;
+    font-size: 16px;
+    overflow-x: auto;
+    height: 95vh;    
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+.container{
+    width: 100%;
+}
+.gridContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    
+}
+input{
+    display: block;
+    width: 100%;
+    padding-left: 0.8rem;
+    margin: 0.8em;
+    height: 3vh;
+    color: #000;    
+    border-radius: 0.3em;   
+    border: 1px solid #d0d0d0; 
+    outline: none;
+    font: inherit;
+}
+
+.saldoBox{
+    padding: 5rem;
+    width: 100%;
+    border: solid;
+    border-radius: 5px;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+.gastoBox{
+    padding: 5rem;
+    width: 100%;
+    border: solid;
+    border-radius: 5px;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+
+}
+.inputBtn {
+    background-color: #A2D9A2;
+    padding: 0.625rem;
+    border: none;
+    margin-top: 0.8rem;
+    font-size: 1em;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+.inputBtn:hover {
+    background-color: #449944;
+}
+.balanceCaja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color:#A2D9A2;
+    color: #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    margin: 2em 0;
+    padding: 1.2em;    
+}
+.balanceCaja span{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e5e5e5;
+} 
+.gastosLista {
+    background-color: #449944;
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    border-radius: 0.6em;
+  }
+
+.hide {
+    display: none;   
+}
+.errorMsg {
+    color: red;
+    margin-left: 2rem;
+    font-weight: bold;
+
+}
+.delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #449944;
+}
+.sublist-content {
+    width: 100%;
+    border-left: 0.3em solid #A2D9A2;
+    margin-bottom: 0.6em;
+    padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+  }
+

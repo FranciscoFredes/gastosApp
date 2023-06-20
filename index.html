@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <title>GastosApp</title>
+  </head>
+  <body>
+    <div class="bodyBox">
+      <div class="container">
+        <div class="gridContainer">
+          <div class="saldoBox">
+            <h3>Ingrese su saldo:</h3>
+            <p class="errorMsg hide" id="errorIngreso">
+              El valor no puede ser vacio o menor que 0
+            </p>
+            <input
+              type="number"
+              id="saldoTotal"
+              placeholder="Ingrese su saldo"
+            />
+            <button class="inputBtn" id="saldoTotalBtn">Ingresar saldo</button>
+          </div>  
+          <div class="gastoBox">
+            <h3>Gastos:</h3>
+            <input
+              type="text"
+              id="nombreGasto"
+              placeholder="Ingrese el nombre del producto"             
+            />
+            <p class="errorMsg hide" id="errorIngreso">
+              El valor no puede ser vacio o menor que 0
+            </p>
+            <input
+              type="number"
+              id="valorGasto"
+              placeholder="Ingrese el costo de su producto"
+            />
+            <p class="errorMsg hide" id="errorIngreso">
+              El valor no puede ser vacio o menor que 0
+            </p>
+            <button class="inputBtn" id="valorgastoBtn">Validar gasto</button>
+          </div>
+        </div>
+          <div class="balanceCaja boxFlex">
+            <div>
+              <p>Saldo Inicial</p>
+              <span id="saldoInicial">0</span>
+            </div>
+            <div>
+              <p>Gastos</p>
+              <span id="gastos"> 0</span>
+            </div>
+            <div>
+              <p>Saldo Total</p>
+              <span id="saldoFinal">0</span>
+            </div>
+          </div>          
+        
+        <div class="lista">
+            <h3>Lista de Gastos</h3>
+            <div class="contenedorLista" id="lista"></div>
+          </div>
+      </div>
+    </div>
+    <script src="assets\js\logic.js"></script>
+  </body>
+</html>
